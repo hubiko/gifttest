@@ -12,12 +12,20 @@
             <div class="container">
                 <div class='turtleSpace'>
                     <div id="turtle">
-                        <img src="./pics/turtle.jpg" width="350px">
+                        <?php if(isset($_SESSION["krunyr"])) 
+                            echo "<img src='./pics/turtle.jpg' width='350px'>";                 //želva ok
+                                else
+                                    echo"<img src='./pics/turtle.jpg' width='350px'>";          //želva obráceně
+                         ?>       
                     </div>
                     <div id="turtleText">
-                        <h1 style="text-align: center;">Pomoc!</h1>
                         <p class='turtleStart'>
-                            Převrátila jsem se na krunýř! 
+                            <?php if(isset($_SESSION["krunyr"]))
+                                    echo "Zachránila si mne!";
+                                        else 
+                                            echo "POMOC! Uvízla jsem!";
+
+                            ?>                            
                         </p>
                     </div>
                     <div class="icons">
@@ -71,6 +79,7 @@
             unset($_SESSION["g2"]);
             unset($_SESSION["g3"]);
             unset($_SESSION["g4"]);
+            unset($_SESSION["krunyr"]);
         }
         ?>
     </body>

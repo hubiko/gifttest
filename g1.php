@@ -30,6 +30,7 @@ $code = '1';
 $codeU = $_POST["code"];
 if($code==$codeU) {
     $_SESSION["g2"]=1;
+    $_SESSION["krunyr"] = 1;
     header("Location:http://localhost/giftest/map.php");
 } else
 echo "Zadala jsi špatný kód.";
