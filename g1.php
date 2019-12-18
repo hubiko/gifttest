@@ -1,12 +1,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
     <div class='main'>
         <div class='container'>
             <div class="paper">
-                <img src="./pics/paper.jpg" class='imgpaper'>
+                <img src="./pics/p1.png" class='imgpaper'>
             </div>
             <div class='gform'>
                 <h1>Zadej kód</h1>

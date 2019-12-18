@@ -15,9 +15,9 @@
                         <img src="./pics/turtle.jpg" width="350px">
                     </div>
                     <div id="turtleText">
-                        <h1>Najdi mě</h1>
+                        <h1 style="text-align: center;">Pomoc!</h1>
                         <p class='turtleStart'>
-                        Najdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi měNajdi mě
+                            Převrátila jsem se na krunýř! 
                         </p>
                     </div>
                     <div class="icons">
