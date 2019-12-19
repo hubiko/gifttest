@@ -7,13 +7,11 @@
     <div class='main'>
         <div class='container'>
             <div class="paper">
-                <img src="./pics/paper.jpg" class='imgpaper'>
+                <img src="./pics/p3.png" class='imgpaper'>
             </div>
-            <div class='gform'>
-                <h1>Zadej kód</h1>
+            <div class='gform'>                
                 <form action='#' method='post'>
-                <input type="text" name="code">
-                <input type="submit" name="ok">
+                <input type="submit" name="ok" value="Zpět">
                 </form>
             </div>            
         </div>
@@ -24,13 +22,19 @@
 
 <?php
 if(isset($_POST["ok"])) {
-session_start();
+    session_start();
+/*session_start();
 $code = '3';
 $codeU = $_POST["code"];
 if($code==$codeU) {
     $_SESSION["g4"]=1;
+    $_SESSION["krunyr"] = 3;
     header("Location:http://localhost/giftest/map.php");
 } else
-echo "Zadala jsi špatný kód.";
+echo "Zadala jsi špatný kód.";*/
+$_SESSION["g4"]=1;
+$_SESSION["krunyr"] = 3;
+header("Location:http://localhost/giftest/map.php");
 }
+
 ?>

@@ -32,10 +32,19 @@
 		margin: auto;
 		margin-left: 30%;
 	}
+	.icons {
+		display: flex;
+		margin-left: 20%;
+		padding-bottom: 10%;
+	}
 	@media only screen and (max-width: 768px) {
 		.imgpaper {
 			width: 100%;
 			margin: 0;
+		}
+		.icons {
+			display: block;
+			margin-left: 30%;
 		}
 		
 	}
@@ -45,11 +54,7 @@
 		padding-bottom: 100px;
 	}
 
-	.icons {
-		display: flex;
-		padding: auto;
-		padding-bottom: 10%;
-	}
+	
 	#g1, #g2, #g3, #g4 {
 		width: 20%;
 	} 

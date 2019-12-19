@@ -26,7 +26,7 @@
 <?php
 if(isset($_POST["ok"])) {
 session_start();
-$code = '1';
+$code = '7824';
 $codeU = $_POST["code"];
 if($code==$codeU) {
     $_SESSION["g2"]=1;

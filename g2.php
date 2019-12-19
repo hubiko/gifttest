@@ -25,10 +25,11 @@
 <?php
 if(isset($_POST["ok"])) {
 session_start();
-$code = '2';
+$code = '2315';
 $codeU = $_POST["code"];
 if($code==$codeU) {
     $_SESSION["g3"]=1;
+    $_SESSION["krunyr"] = 2;
     header("Location:http://localhost/giftest/map.php");
 } else
 echo "Zadala jsi špatný kód.";

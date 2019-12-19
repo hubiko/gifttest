@@ -25,10 +25,14 @@
 <?php
 if(isset($_POST["ok"])) {
 session_start();
-$code = '4';
+$code = '6355';
 $codeU = $_POST["code"];
 if($code==$codeU) {
-    header("Location:http://localhost/giftest/final.php");
+    unset($_SESSION["g2"]);
+            unset($_SESSION["g3"]);
+            unset($_SESSION["g4"]);
+            unset($_SESSION["krunyr"]);
+    header("Location:http://localhost/giftest/pics/certificate_sign.pdf");
 } else
 echo "Zadala jsi špatný kód.";
 }
